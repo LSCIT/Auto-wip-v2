@@ -1,0 +1,9 @@
+-- Reference copy of Michael's LCGWIPUpdateCostBill from WipDb
+-- Pulled 2026-04-08 by Josh Garrison (SA access)
+-- This proc UPDATES existing WIPDetail rows with fresh cost/billing from Vista.
+-- It does NOT create rows or filter jobs — only touches jobs already in WIPDetail.
+-- Key findings:
+--   1. Uses bJCCP for cost aggregation (not bJCCD like our query)
+--   2. Uses bJCIP for billing (not vrvJBProgressBills)
+--   3. Commented-out code had: WHERE j.JobStatus IN(1,2) — the original filter
+--   4. Hardcoded override: contract '52.8563.' forced to ContractStatus=2

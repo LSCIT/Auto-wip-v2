@@ -1,0 +1,248 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel">
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="238"/>
+ </o:shapelayout><v:shapetype id="_x0000_t201" coordsize="21600,21600" o:spt="201"
+  path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path shadowok="f" o:extrusionok="f" strokeok="f" fillok="f" o:connecttype="rect"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+ </v:shapetype><v:shape id="Update_x0020_Cost_x0020__x0026__x0020_Billed"
+  o:spid="_x0000_s243722" type="#_x0000_t201" style='position:absolute;
+  margin-left:462pt;margin-top:168pt;width:84pt;height:44.25pt;z-index:1;
+  mso-wrap-style:tight' o:button="t" fillcolor="buttonFace" strokecolor="windowText"
+  o:insetmode="auto">
+  <v:fill color2="buttonFace" o:detectmouseclick="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:center'><font face="Arial" size="200" color="#000000">Update
+   Cost, Billed &amp; Status</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Button">
+   <x:Anchor>
+    6, 11, 11, 1, 7, 61, 13, 5</x:Anchor>
+   <x:PrintObject>False</x:PrintObject>
+   <x:AutoFill>False</x:AutoFill>
+   <x:FmlaMacro>[0]!UpdateCostBill</x:FmlaMacro>
+   <x:TextHAlign>Center</x:TextHAlign>
+   <x:TextVAlign>Center</x:TextVAlign>
+  </x:ClientData>
+ </v:shape><v:shape id="_x0000_s243724" type="#_x0000_t201" style='position:absolute;
+  margin-left:562.5pt;margin-top:166.5pt;width:67.5pt;height:45.75pt;z-index:2;
+  visibility:visible;mso-wrap-style:tight' o:button="t" fillcolor="buttonFace"
+  strokecolor="windowText" o:insetmode="auto">
+  <v:fill color2="buttonFace" o:detectmouseclick="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:center'><font face="Arial" size="180" color="#000000">Copy
+   Ops to GAAP</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Button">
+   <x:Anchor>
+    8, 21, 10, 25, 9, 49, 13, 5</x:Anchor>
+   <x:PrintObject>False</x:PrintObject>
+   <x:AutoFill>False</x:AutoFill>
+   <x:FmlaMacro>[0]!OpsToGAAP</x:FmlaMacro>
+   <x:TextHAlign>Center</x:TextHAlign>
+   <x:TextVAlign>Center</x:TextVAlign>
+  </x:ClientData>
+ </v:shape><v:shape id="RFO-Yes" o:spid="_x0000_s243725" type="#_x0000_t201"
+  style='position:absolute;margin-left:14.25pt;margin-top:179.25pt;width:30pt;
+  height:18.75pt;z-index:3;mso-wrap-style:tight' o:button="t" filled="f"
+  fillcolor="window" stroked="f" strokecolor="windowText" o:insetmode="auto">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path shadowok="t" strokeok="t" fillok="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:left'><font face="Segoe UI" size="160" color="#000000">Yes</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Radio">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    0, 19, 11, 16, 0, 59, 12, 1</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:AutoLine>False</x:AutoLine>
+   <x:FmlaMacro>[0]!RFOYes_Click</x:FmlaMacro>
+   <x:TextVAlign>Center</x:TextVAlign>
+   <x:NoThreeD/>
+   <x:FirstButton/>
+  </x:ClientData>
+ </v:shape><v:shape id="RFO-No" o:spid="_x0000_s243726" type="#_x0000_t201"
+  style='position:absolute;margin-left:59.25pt;margin-top:180pt;width:31.5pt;
+  height:19.5pt;z-index:4;mso-wrap-style:tight' o:button="t" filled="f"
+  fillcolor="window" stroked="f" strokecolor="windowText" o:insetmode="auto">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path shadowok="t" strokeok="t" fillok="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:left'><font face="Segoe UI" size="160" color="#000000">No</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Radio">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    0, 79, 11, 17, 0, 121, 12, 3</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:AutoLine>False</x:AutoLine>
+   <x:FmlaMacro>[0]!RFONo_Click</x:FmlaMacro>
+   <x:TextVAlign>Center</x:TextVAlign>
+   <x:Checked>1</x:Checked>
+   <x:NoThreeD/>
+  </x:ClientData>
+ </v:shape><v:shape id="RFO" o:spid="_x0000_s243727" type="#_x0000_t201"
+  style='position:absolute;margin-left:.75pt;margin-top:167.25pt;width:105pt;
+  height:41.25pt;z-index:5;mso-wrap-style:tight' filled="f" strokecolor="windowText"
+  o:insetmode="auto">
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:left'><font face="Segoe UI" size="160" color="#000000">Ready
+   For Ops</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="GBox">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    0, 1, 11, 0, 1, 0, 13, 0</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:NoThreeD/>
+  </x:ClientData>
+ </v:shape><v:shape id="_x0000_s243729" type="#_x0000_t201" style='position:absolute;
+  margin-left:105.75pt;margin-top:21pt;width:81.75pt;height:15.75pt;z-index:6;
+  mso-wrap-style:tight' stroked="f" strokecolor="windowText" o:insetmode="auto">
+  <o:lock v:ext="edit" rotation="t" text="t"/>
+  <x:ClientData ObjectType="Drop">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    1, 0, 1, 3, 1, 109, 1, 24</x:Anchor>
+   <x:AutoLine>False</x:AutoLine>
+   <x:FmlaLink>SortOption</x:FmlaLink>
+   <x:Val>0</x:Val>
+   <x:Min>0</x:Min>
+   <x:Max>0</x:Max>
+   <x:Inc>1</x:Inc>
+   <x:Page>2</x:Page>
+   <x:Dx>26</x:Dx>
+   <x:FmlaRange>SortDDList</x:FmlaRange>
+   <x:Sel>1</x:Sel>
+   <x:NoThreeD2/>
+   <x:SelType>Single</x:SelType>
+   <x:LCT>Normal</x:LCT>
+   <x:DropStyle>Combo</x:DropStyle>
+   <x:DropLines>2</x:DropLines>
+  </x:ClientData>
+ </v:shape><v:shape id="_x0000_s243730" type="#_x0000_t201" style='position:absolute;
+  margin-left:105.75pt;margin-top:167.25pt;width:93.75pt;height:41.25pt;
+  z-index:7;mso-wrap-style:tight' filled="f" strokecolor="windowText"
+  o:insetmode="auto">
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:left'><font face="Segoe UI" size="160" color="#000000">Ops
+   Final Approval</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="GBox">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    1, 0, 11, 0, 1, 128, 12, 15</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:NoThreeD/>
+  </x:ClientData>
+ </v:shape><v:shape id="OFA-Yes" o:spid="_x0000_s243731" type="#_x0000_t201"
+  style='position:absolute;margin-left:114pt;margin-top:180pt;width:27.75pt;
+  height:17.25pt;z-index:8;mso-wrap-style:tight' o:button="t" filled="f"
+  fillcolor="window" stroked="f" strokecolor="windowText" o:insetmode="auto">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path shadowok="t" strokeok="t" fillok="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:left'><font face="Segoe UI" size="160" color="#000000">Yes</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Radio">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    1, 11, 11, 17, 1, 48, 11, 40</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:AutoLine>False</x:AutoLine>
+   <x:FmlaMacro>[0]!OFAYes_Click</x:FmlaMacro>
+   <x:TextVAlign>Center</x:TextVAlign>
+   <x:NoThreeD/>
+   <x:FirstButton/>
+  </x:ClientData>
+ </v:shape><v:shape id="OFA-No" o:spid="_x0000_s243732" type="#_x0000_t201"
+  style='position:absolute;margin-left:159pt;margin-top:180pt;width:28.5pt;
+  height:17.25pt;z-index:9;mso-wrap-style:tight' o:button="t" filled="f"
+  fillcolor="window" stroked="f" strokecolor="windowText" o:insetmode="auto">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path shadowok="t" strokeok="t" fillok="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:left'><font face="Segoe UI" size="160" color="#000000">No</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Radio">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    1, 71, 11, 17, 1, 109, 11, 40</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:AutoLine>False</x:AutoLine>
+   <x:FmlaMacro>[0]!OFANo_Click</x:FmlaMacro>
+   <x:TextVAlign>Center</x:TextVAlign>
+   <x:Checked>1</x:Checked>
+   <x:NoThreeD/>
+  </x:ClientData>
+ </v:shape><v:shape id="AFA-Yes" o:spid="_x0000_s243734" type="#_x0000_t201"
+  style='position:absolute;margin-left:214.5pt;margin-top:180pt;width:24.75pt;
+  height:17.25pt;z-index:10;mso-wrap-style:tight' o:button="t" filled="f"
+  fillcolor="window" stroked="f" strokecolor="windowText" o:insetmode="auto">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path shadowok="t" strokeok="t" fillok="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:left'><font face="Segoe UI" size="160" color="#000000">Yes</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Radio">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    2, 20, 11, 17, 2, 53, 11, 40</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:AutoLine>False</x:AutoLine>
+   <x:FmlaMacro>[0]!AFAYes_Click</x:FmlaMacro>
+   <x:TextVAlign>Center</x:TextVAlign>
+   <x:NoThreeD/>
+   <x:FirstButton/>
+  </x:ClientData>
+ </v:shape><v:shape id="AFA-No" o:spid="_x0000_s243735" type="#_x0000_t201"
+  style='position:absolute;margin-left:260.25pt;margin-top:179.25pt;width:31.5pt;
+  height:17.25pt;z-index:11;mso-wrap-style:tight' o:button="t" filled="f"
+  fillcolor="window" stroked="f" strokecolor="windowText" o:insetmode="auto">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path shadowok="t" strokeok="t" fillok="t"/>
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:left'><font face="Segoe UI" size="160" color="#000000">No</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Radio">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    2, 81, 11, 16, 2, 123, 11, 39</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:AutoLine>False</x:AutoLine>
+   <x:FmlaMacro>[0]!AFANo_Click</x:FmlaMacro>
+   <x:TextVAlign>Center</x:TextVAlign>
+   <x:Checked>1</x:Checked>
+   <x:NoThreeD/>
+  </x:ClientData>
+ </v:shape><v:shape id="_x0000_s243736" type="#_x0000_t201" style='position:absolute;
+  margin-left:200.25pt;margin-top:167.25pt;width:114pt;height:41.25pt;
+  z-index:12;mso-wrap-style:tight' filled="f" strokecolor="windowText"
+  o:insetmode="auto">
+  <o:lock v:ext="edit" rotation="t"/>
+  <v:textbox style='mso-direction-alt:auto' o:singleclick="f">
+   <div style='text-align:left'><font face="Segoe UI" size="160" color="#000000">Acct
+   Final Approval</font></div>
+  </v:textbox>
+  <x:ClientData ObjectType="GBox">
+   <x:SizeWithCells/>
+   <x:Anchor>
+    2, 1, 10, 27, 3, 0, 12, 15</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:NoThreeD/>
+  </x:ClientData>
+ </v:shape></xml>
