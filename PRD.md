@@ -198,6 +198,9 @@ Triggered automatically on state transitions. All emails sent from the server; n
 Email body includes a direct link to the batch in the app. Recipient list is derived from
 `WipUserPermissions` rows matching the batch's `JCCo` and `Department`.
 
+> **Schema note:** An `Email` column (`nvarchar(254)`) must be added to `WipUserPermissions`
+> if not already present. Migration script to be included in the project's `sql/` directory.
+
 ### 6.7 Excel Export
 
 Available at any stage, any tab. An **Export to Excel** button above each grid generates a
@@ -209,7 +212,19 @@ The export must:
 - Preserve number formatting (currency, percentages)
 - Mark override cells with the same yellow fill (`FFFF00`) as the workbook
 
-### 6.8 Audit Trail
+### 6.8 Jobs-Ops vs GAAP Comparison Tab
+
+Read-only grid showing both Ops and GAAP values side by side for every job in the batch.
+Available to Accounting users at any stage after batch creation. Not loadable from a
+batch snapshot in Excel — the web app generates it live from `WipJobData` and the
+Vista-sourced values stored in the batch record.
+
+Columns: Job, Description, Contract Status, Ops Rev Override, GAAP Rev Override, Variance
+(Rev), Ops Cost Override, GAAP Cost Override, Variance (Cost), Ops Bonus, GAAP Notes.
+
+Export to Excel is available on this tab with the same server-side generation as §6.7.
+
+### 6.9 Audit Trail
 
 Every call to `LylesWIPSaveJobRow` stores `UpdatedBy` (Entra UPN) and `UpdatedAt` (UTC timestamp)
 in `WipJobData`. The web app surfaces this as a **row history tooltip** on the Done checkboxes
@@ -270,15 +285,15 @@ Stage 3 (Accounting):
 
 ---
 
-## 10. Open Questions
+## 10. Resolved Decisions
 
-| # | Question | Owner |
-|---|----------|-------|
-| OQ1 | Which Exchange/M365 tenant and SMTP relay should the app use for outbound email? | Josh / IT |
-| OQ2 | Does the `WipUserPermissions` table already have email addresses, or do we pull from Entra? | Josh |
-| OQ3 | Is the IIS app pool identity a service account with SQL access, or does it use connection strings with SQL auth? | Josh / IT |
-| OQ4 | December year-end snapshot: currently gated on ALL divisions for a company reaching `AcctApproved`. Confirm this gate remains the same. | Nicole |
-| OQ5 | Jobs-Ops vs GAAP comparison tab — include in Phase 1 or defer? | Josh |
+| # | Question | Decision |
+|---|----------|----------|
+| OQ1 | SMTP relay for outbound email | `smtp.lylesgroup.com` |
+| OQ2 | Email addresses for notification recipients | Add `Email` column to `WipUserPermissions` if not present |
+| OQ3 | IIS app pool / SQL authentication | Connection strings with SQL auth (same accounts as today) |
+| OQ4 | December year-end snapshot gate | Process runs monthly; December snapshot triggers when all divisions for a company reach `AcctApproved` in December — same gate, confirmed |
+| OQ5 | Jobs-Ops vs GAAP comparison tab | **In scope for Phase 1** |
 
 ---
 
