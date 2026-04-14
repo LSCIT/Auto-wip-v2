@@ -1,0 +1,42 @@
+# =============================================================================
+# Auto-WIP — .gitignore
+# =============================================================================
+
+# --- Credentials & secrets (NEVER commit) ------------------------------------
+.env
+.env.local
+.env.*.local
+credentials.ini
+secrets.json
+SCHEMA.md          # Contains plaintext DB passwords
+
+# --- Financial / proprietary data --------------------------------------------
+Data-from-Nicole/  # Nicole's 40 historical Excel override files
+meetings/          # Recorded meeting files
+Status-Reports/    # Generated PDF/MD status reports (business-sensitive)
+
+# --- VM workbooks (binary, large, may embed credentials) ---------------------
+vm/
+
+# --- Crystal Reports ---------------------------------------------------------
+vp/
+
+# --- Python build artifacts --------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# --- OS artifacts ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editor artifacts --------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo

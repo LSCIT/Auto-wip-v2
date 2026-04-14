@@ -21,10 +21,10 @@ from decimal import Decimal, InvalidOperation
 # =============================================================================
 # Config
 # =============================================================================
-SERVER   = '10.103.30.11'
-DATABASE = 'LylesWIP'
-USERNAME = 'wip.excel.sql'
-PASSWORD = 'WES@2024'
+SERVER   = os.environ.get('LYLESWIP_SERVER',   '10.103.30.11')
+DATABASE = os.environ.get('LYLESWIP_DATABASE', 'LylesWIP')
+USERNAME = os.environ.get('LYLESWIP_UID',      'wip.excel.sql')
+PASSWORD = os.environ.get('LYLESWIP_PWD',      '')
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Data-from-Nicole')
 
