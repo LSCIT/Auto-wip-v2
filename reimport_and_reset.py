@@ -117,8 +117,10 @@ try:
 
     conn = pyodbc.connect(
         'DRIVER={ODBC Driver 18 for SQL Server};'
-        'SERVER=10.103.30.11;DATABASE=LylesWIP;'
-        'UID=wip.excel.sql;PWD=WES@2024;'
+        f"SERVER={os.environ.get('LYLESWIP_SERVER', '10.103.30.11')};"
+        f"DATABASE={os.environ.get('LYLESWIP_DATABASE', 'LylesWIP')};"
+        f"UID={os.environ.get('LYLESWIP_UID', 'wip.excel.sql')};"
+        f"PWD={os.environ.get('LYLESWIP_PWD', '')};"
         'TrustServerCertificate=yes;Encrypt=no'
     )
     cursor = conn.cursor()

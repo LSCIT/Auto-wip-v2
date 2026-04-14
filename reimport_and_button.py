@@ -18,7 +18,7 @@ BAS_FILES = {
     "LylesWIPData": r"E:\Auto-Wip\vba_source\LylesWIPData.bas",
     "FormButtons":  r"E:\Auto-Wip\vba_source\FormButtons.bas",
 }
-SHEET_PASSWORD = "password"
+SHEET_PASSWORD = os.environ.get('WIP_SHEET_PASSWORD', '')
 
 results = {}
 
