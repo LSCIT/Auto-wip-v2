@@ -8,12 +8,16 @@
 .env.*.local
 credentials.ini
 secrets.json
-SCHEMA.md          # Contains plaintext DB passwords
+# Contains plaintext DB passwords
+SCHEMA.md
 
 # --- Financial / proprietary data --------------------------------------------
-Data-from-Nicole/  # Nicole's 40 historical Excel override files
-meetings/          # Recorded meeting files
-Status-Reports/    # Generated PDF/MD status reports (business-sensitive)
+# Nicole's 40 historical Excel override files
+Data-from-Nicole/
+# Recorded meeting files
+meetings/
+# Generated PDF/MD status reports (business-sensitive)
+Status-Reports/
 
 # --- VM workbooks (binary, large, may embed credentials) ---------------------
 vm/
