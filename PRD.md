@@ -104,7 +104,17 @@ Operations users never trigger a Vista query.
 
 ---
 
-## 6. Feature Requirements
+## 6. Workflow
+
+See **[WORKFLOW.md](WORKFLOW.md)** for:
+- Batch state machine diagram (4 states, all transitions, guards, admin reset, December snapshot)
+- Full end-to-end flowchart (actors, data sources, grids, auto-save, gates, email notifications)
+- Data source table by stage
+- Override merge priority logic
+
+---
+
+## 7. Feature Requirements
 
 ### 6.1 Navigation and Batch Selection
 
@@ -233,7 +243,7 @@ the Excel workbook.
 
 ---
 
-## 7. Data Flow (Web App)
+## 8. Data Flow (Web App)
 
 ```
 Stage 1 (Accounting only):
@@ -259,7 +269,7 @@ Stage 3 (Accounting):
 
 ---
 
-## 8. UI / UX Requirements
+## 9. UI / UX Requirements
 
 - **ag-Grid** for all job data grids (existing license)
 - Editable cells use ag-Grid's inline cell editing; yellow background (`#FFFF00`) on editable columns
@@ -272,7 +282,7 @@ Stage 3 (Accounting):
 
 ---
 
-## 9. Out of Scope — Deferred to Future Phases
+## 10. Out of Scope — Deferred to Future Phases
 
 | Item | Reason deferred |
 |------|----------------|
@@ -285,7 +295,7 @@ Stage 3 (Accounting):
 
 ---
 
-## 10. Resolved Decisions
+## 11. Resolved Decisions
 
 | # | Question | Decision |
 |---|----------|----------|
@@ -297,7 +307,7 @@ Stage 3 (Accounting):
 
 ---
 
-## 11. Success Criteria
+## 12. Success Criteria
 
 Phase 1 is complete when:
 1. All four companies (WML, AIC, APC, NESM) can complete a full three-stage WIP cycle in the web app

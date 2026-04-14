@@ -19,6 +19,15 @@ meetings/
 # Generated PDF/MD status reports (business-sensitive)
 Status-Reports/
 
+# --- Excel / Office binary files ---------------------------------------------
+*.xltm
+*.xlsm
+*.xlsx
+*.xlsb
+*.docx
+*.pdf
+original/
+
 # --- VM workbooks (binary, large, may embed credentials) ---------------------
 vm/
 
@@ -33,6 +42,11 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+
+# --- Excel-era scripts (Windows COM automation — no longer needed) -----------
+session-notes/
+vba_source/
+vba_source_569p/
 
 # --- OS artifacts ------------------------------------------------------------
 .DS_Store
